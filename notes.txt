@@ -1,0 +1,7 @@
+use kdb tag
+for keyboard keys representation
+
+
+also add more a tags on top use # to set the target page according to id
+
+for showing projects make a seperate file and write the html css for them seperatly

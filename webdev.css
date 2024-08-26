@@ -1,0 +1,53 @@
+body,html{
+    position: relative;
+    padding: 0;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(to right, rgb(38, 38, 38), rgb(22, 71, 1));  /*black green color*/
+    color: #979797;
+}
+
+img{
+    position: relative;
+    height: 100%;
+    width: 100%;
+    image-resolution: initial;
+}
+.card{
+    background-color: #333;
+    margin:10px 0px ;
+    padding: 20px;
+    border-radius: 8px;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-self:first baseline;
+}
+.card>a{
+    color: #979797;
+    cursor: pointer;      
+}
+
+.card1{
+    background-color: #333;
+    margin: 10px 0;
+    padding: 20px;
+    border-radius: 10px;
+    width: 70%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    align-self:last baseline;
+}
+
+.card1>a{
+    color: #979797;
+    cursor: pointer;
+}
+
+.mainn{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    align-items:first baseline;
+    /* padding: 10px; */
+    height: 100vh;
+}
