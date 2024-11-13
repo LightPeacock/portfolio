@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: gilroy;
+  }
+  
+  html,
+  body {
+    height: 100%;
+    width: 100;
+    background: linear-gradient(to right, rgb(38, 38, 38), rgb(22, 71, 1));  /*black green color*/
+    color: #979797;
+  }
