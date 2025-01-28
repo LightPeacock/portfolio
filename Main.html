@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <nav class="navbar">
+        <h1>CL Narayanan's Portfolio&nbsp;&nbsp;</h1>
+    </nav>
+    
+    <div class="container">
+        <!-- Right Section -->
+        <div class="right-section">
+            <div class="content">
+                <div class="heading">
+                    <h2>CAREER GOALS</h2>
+                    <hr>
+                </div>
+                <ul>
+                    <li>SDE</li>
+                    <li>Game Developer</li>
+                    <li>AI & ML Engineer</li>
+                </ul>
+                <div class="heading">
+                    <h2>PROJECTS</h2>
+                    <hr>
+                </div>
+                <ul>
+                    <li><a href="project1.html" target="_blank">2D Runner Game</a></li>
+                    <li><a href="project2.html" target="_blank">Zombie Game</a></li>
+                    <li><a href="project3.html" target="_blank">3D Shirt Customization</a></li>
+                    <li><a href="project4.html" target="_blank">Portfolio Website</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- Left Section -->
+        <div class="left-section">
+            <div class="photo">
+                <img src="static/Profile photo.jpg" alt="CL Narayanan's Photo">
+            </div>
+            <div class="details">
+                <h2>About Me</h2>
+                <p>Hello! I'm CL Narayanan, a passionate developer specialized in SDE, Game Development, and AI/ML.</p>
+                <ul>
+                    <li><strong>Email:</strong> clnarayanan12345@gmail.com</li>
+                    <li><strong>Phone:</strong> 9867629595</li>
+                    <li><strong>GitHub:</strong> <a href="https://github.com/LightPeacock" target="_blank">LightPeacock</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/cl-narayanan-a38598249/" target="_blank">CL Narayanan</a></li>
+                    <li><strong>Languages:</strong> Tamil, Telugu, Hindi, English</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="container contact-section">
+        <section class="contact-us">
+            <div class="email-section">
+                <h2>Send Me an Email</h2>
+                <form id="form">
+                    <div class="field">
+                        <label for="from_name">Your Name</label>
+                        <input type="text" name="from_name" id="from_name" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" rows="4" required></textarea>
+                    </div>
+                    <input type="submit" id="button" value="Send Email">
+                </form>
+                <p id="statusMessage"></p>
+            </div>
+            <div class="whatsapp-section">
+                <h2>Message Me on WhatsApp</h2>
+                <a href="https://wa.me/919867329341?text=Hello%20CL%20Narayanan,%20I%20would%20like%20to%20connect!" target="_blank">
+                    <button class="whatsapp-button">Message on WhatsApp</button>
+                </a>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>Copyright &copy; 2025 CL Narayanan</p>
+    </footer>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>

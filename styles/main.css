@@ -1,0 +1,258 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    overflow-x: hidden; /* Prevent horizontal scrolling */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: white;
+    background: black;
+    line-height: 1.6;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Semi-transparent background */
+    color: white;
+    padding: 1rem 2rem;
+    text-align: center;
+    z-index: 1000;
+    position: relative; /* Non-fixed navbar */
+}
+
+.navbar h1 {
+    display: inline-block;
+    font-size: 7rem;
+    text-transform: uppercase;
+    text-shadow: 0 0 10px cyan; /* Text glow effect */
+    animation: scroll-text 10s linear infinite; /* Add animation */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+/* Keyframes for scrolling text */
+@keyframes scroll-text {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+/* Main Container */
+.container {
+    display: flex;
+    margin: 5rem 2rem 2rem;
+    height: calc(100vh - 6rem); /* Ensures the content fits the viewport height */
+}
+
+/* Right Section */
+.right-section {
+    flex: 2;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1); /* Slight transparency */
+    border-radius: 10px;
+    margin-right: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease; /* Smooth scale effect */
+}
+
+.content {
+    margin-bottom: 2rem;
+    overflow-y: auto; /* Add scrolling within the section if needed */
+}
+
+.heading h2 {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    color: white;
+    margin-bottom: 0.5rem;
+    text-align: center;
+    text-shadow: 0 0 10px cyan; /* Increased text border */
+    transition: font-size 0.3s ease;
+}
+
+.heading h2:hover {
+    font-size: 1.8rem;
+}
+
+.heading hr {
+    margin: 1rem auto;
+    border: none;
+    border-top: 2px solid #ffb703;
+    width: 50%;
+}
+
+.right-section ul {
+    list-style: none;
+    padding-left: 1rem;
+}
+
+.right-section ul li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.right-section ul li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 10px cyan;
+}
+
+.right-section ul li a:hover {
+    color: rgb(81, 217, 81);
+    font-size: large;
+}
+
+/* Left Section */
+.left-section {
+    flex: 1;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.photo img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 50%;
+    margin-bottom: 1rem;
+    border: 5px solid #ffb703;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.details h2 {
+    margin-bottom: 1rem;
+    color: white;
+    text-shadow: 0 0 10px cyan;
+}
+
+.details ul {
+    list-style: none;
+}
+
+.details ul li {
+    margin-bottom: 0.5rem;
+}
+
+.details a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    text-shadow: 0 0 10px cyan;
+}
+
+.details a:hover {
+    color: rgb(81, 217, 81);
+    font-size: large;
+}
+
+/* Form Styles */
+form {
+    margin-top: 1rem;
+}
+
+.field {
+    margin-bottom: 1.5rem;
+}
+
+.field label {
+    font-size: 1.2rem;
+    color: white;
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.field input,
+.field textarea {
+    width: 100%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: 1px solid #ffb703;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+.field input[type="submit"] {
+    background-color: #ffb703;
+    color: black;
+    cursor: pointer;
+    border: 2px solid white; /* Added border */
+    font-size: 1.5rem; /* Increased size */
+    padding: 1rem; /* Added padding */
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.field input[type="submit"]:hover {
+    background-color: #ff7b00;
+    border-color: #ffb703; /* Border color on hover */
+}
+
+/* Status Message */
+#statusMessage {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+/* WhatsApp Button */
+.whatsapp-button {
+    background-color: #25d366; /* WhatsApp green color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #1da851;
+    transform: scale(1.05);
+}
+
+/* Reduce spacing between the last button and footer */
+.contact-us {
+    margin-bottom: 0; /* Remove unnecessary bottom margin */
+    padding-bottom: 1rem; /* Add minimal padding for spacing */
+}
+
+/* Footer Styles */
+footer {
+    text-align: center; /* Center the footer text */
+    padding: 1rem 0;
+    background: black; /* Ensure consistency with the overall theme */
+    color: white;
+    font-size: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .right-section,
+    .left-section {
+        margin: 1rem 0;
+    }
+
+    .navbar h1 {
+        font-size: 4rem;
+    }
+}
