@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Link to external CSS -->
+</head>
+<body>
+    <div class="navbar">
+        <h1>Contact Us</h1>
+    </div>
+
+    <div class="container">
+        <!-- Left Section (Contact Information) -->
+        <div class="left-section">
+            <div class="photo">
+                <img src="your-photo.jpg" alt="Profile Picture">
+            </div>
+            <div class="details">
+                <h2>Contact Details</h2>
+                <ul>
+                    <li>Email: <a href="mailto:youremail@example.com">youremail@example.com</a></li>
+                    <li>Phone: <a href="tel:+1234567890">+123 456 7890</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Right Section (Form) -->
+        <div class="right-section">
+            <div class="content">
+                <div class="heading">
+                    <h2>Send Us a Message</h2>
+                    <hr>
+                </div>
+                <form id="form">
+                    <div class="field">
+                        <label for="from_name">Your Name</label>
+                        <input type="text" name="from_name" id="from_name" required>
+                    </div>
+                    <div class="field">
+                        <label for="message">Your Message</label>
+                        <textarea name="message" id="message" rows="4" required></textarea>
+                    </div>
+
+                    <input type="submit" id="button" value="Send Email">
+                </form>
+                <p id="statusMessage"></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="scripts/script.js"></script> <!-- Link to external JS -->
+</body>
+</html>

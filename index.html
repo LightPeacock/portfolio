@@ -1,0 +1,602 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>C L  Narayanan - Portfolio</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <script type="text/javascript" 
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+</script>
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <h1 class="nav-title">C L Narayanan</h1>
+            <div class="nav-menu">
+                <a href="#about" class="nav-link">About</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <h1 class="hero-title">
+                        Hi, I'm <span class="highlight">C.L. Narayanan</span>
+                    </h1>
+                    <p class="hero-subtitle">AI/ML Engineer & Full-Stack Developer</p>
+                    <p class="hero-description">
+                        Passionate AI/ML Engineer with expertise in Python, LLMs, Langchain and PyTorch. 
+                        Creating innovative solutions that bridge artificial intelligence with real-world applications.
+                    </p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-outline">View Projects</a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="profile-card">
+                        <img src="static/image5.jpeg" alt="C.L. Narayanan" class="profile-img">
+                        <div class="profile-info">
+                            <h3>C.L. Narayanan</h3>
+                            <p>AI/ML Engineer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        Hello! I'm C L Narayanan, an AI/ML Engineer and Full-Stack Developer currently pursuing 
+                        B.Tech in AI & Data Science at KL University. I specialize in creating intelligent solutions 
+                        using cutting-edge technologies like LLMs, langchain, PyTorch, and deep learning frameworks.
+                    </p>
+                    <p>
+                        My passion lies in developing AI-driven applications that solve real-world problems, 
+                        from document processing systems to emotion-sensing assistants. I combine technical 
+                        expertise with leadership skills and creative problem-solving.
+                    </p>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4><i class="fas fa-code"></i> Programming Languages</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Python</span>
+                                <span class="skill-tag">Java</span>
+                                <span class="skill-tag">C</span>
+                                <span class="skill-tag">HTML/CSS</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-brain"></i> AI/ML Technologies</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">PyTorch</span>
+                                <span class="skill-tag">Deep Learning</span>
+                                <span class="skill-tag">NLP</span>
+                                <span class="skill-tag">LLMs</span>
+                                <span class="skill-tag">Machine Learning</span>
+                                <span class="skill-tag">Langchain</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-tools"></i> Development Tools</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">Django</span>
+                                <span class="skill-tag">Unity</span>
+                                <span class="skill-tag">Git</span>
+                                <span class="skill-tag">Docker</span>
+                                <span class="skill-tag">Flask</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-tools"></i>DataBases Technologies</h4>
+                            <div class="skill-tags">
+                                <span class="skill-tag">MySQL</span>
+                                <span class="skill-tag">MongoDB</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="about-details">
+                    <div class="detail-card">
+                        <h4><i class="fas fa-target"></i> Career Goals</h4>
+                        <ul class="career-goals">
+                            <li><i class="fas fa-robot"></i> AI/ML Engineer</li>
+                            <li><i class="fas fa-code"></i> Full-Stack Developer</li>
+                            <li><i class="fas fa-users"></i> Software Engineering Lead</li>
+                            <li><i class="fas fa-cloud"></i> Backend Developer</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h4><i class="fas fa-graduation-cap"></i> Education & Certifications</h4>
+                        <div class="education-info">
+                            <p><strong>B.Tech in AI & Data Science</strong></p>
+                            <p>KL University (2022 – 2026) Vijayawada</p>
+                            <div class="certifications">
+                                <span class="cert-badge">Unity User Programmer</span>
+                                <span class="cert-badge">IBM Python Certified</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-card">
+                        <h4><i class="fas fa-trophy"></i> Achievements</h4>
+                        <ul class="achievements">
+                            <li><i class="fas fa-medal"></i> Guinness World Record Holder (Skating, 2017)</li>
+                            <li><i class="fas fa-tennis-ball"></i> State-Level Tennis Player</li>
+                            <li><i class="fas fa-gamepad"></i> IGDC Gaming Conference Attendee 2024</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience & Leadership</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h4>AI Developer Intern</h4>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <p class="company"><i class="fas fa-building"></i> L&T Constructions</p>
+                        <p class="description">
+                            Developed <strong>DocQuery</strong>, an innovative AI-powered interface that processes 
+                            user documents and enables intelligent querying through natural language. The system 
+                            understands document content and provides accurate responses to user queries, 
+                            revolutionizing document interaction workflows.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech">Python</span>
+                            <span class="tech">NLP</span>
+                            <span class="tech">Machine Learning</span>
+                            <span class="tech">Document Processing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h4>Chief Organizer - AR/VR Event</h4>
+                            <span class="timeline-date">2024</span>
+                        </div>
+                        <p class="company"><i class="fas fa-university"></i> KL University</p>
+                        <p class="description">
+                            Led the planning and execution of a major technology symposium focused on 
+                            AR/VR innovations. Managed cross-functional teams, coordinated with industry 
+                            experts, and delivered a successful event showcasing cutting-edge immersive technologies.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech">Leadership</span>
+                            <span class="tech">Event Management</span>
+                            <span class="tech">Team Coordination</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="timeline-item">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h4>Sub-Chief, Sponsorship Committee</h4>
+                            <span class="timeline-date">2023</span>
+                        </div>
+                        <p class="company"><i class="fas fa-university"></i> College Fest</p>
+                        <p class="description">
+                            Successfully managed sponsorships for a major college festival, establishing 
+                            partnerships with leading companies and securing significant funding. Demonstrated 
+                            exceptional negotiation and relationship management skills.
+                        </p>
+                        <div class="tech-stack">
+                            <span class="tech">Business Development</span>
+                            <span class="tech">Negotiation</span>
+                            <span class="tech">Partnership Management</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            <div class="projects-grid">
+                
+                <!-- TESSA Project -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-robot project-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>TESSA - AI Virtual Assistant</h3>
+                            <span class="project-status">In Progress</span>
+                        </div>
+                        <p>
+                            Advanced AI-powered desktop assistant (formerly IONA) featuring emotion detection, 
+                            automation capabilities, and intelligent conversation. Built with cutting-edge 
+                            machine learning algorithms for natural user interaction.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature"><i class="fas fa-eye"></i> Emotion Detection</span>
+                            <span class="feature"><i class="fas fa-cogs"></i> Task Automation</span>
+                            <span class="feature"><i class="fas fa-comments"></i> Natural Language</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">NLP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- DocQuery Project -->
+                <div class="project-card featured">
+                    <div class="project-image">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-file-search project-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>DocQuery - AI Document Processor</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p>
+                            Intelligent web application developed during L&T internship that accepts user documents, 
+                            processes and understands their content, then responds to natural language queries 
+                            based on the document information.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature"><i class="fas fa-upload"></i> Document Upload</span>
+                            <span class="feature"><i class="fas fa-search"></i> Smart Querying</span>
+                            <span class="feature"><i class="fas fa-brain"></i> Content Understanding</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Langchain</span>
+                            <span class="tag">GPT4All</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Flask</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SETH Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-heart project-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>SETH - Emotion AI</h3>
+                            <span class="project-status">In Progress</span>
+                        </div>
+                        <p>
+                            Sophisticated emotion-sensing AI system utilizing machine learning and RNN 
+                            enhancements to detect and analyze human emotional states through various input modalities.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature"><i class="fas fa-smile"></i> Emotion Recognition</span>
+                            <span class="feature"><i class="fas fa-chart-line"></i> RNN Enhancement</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">RNN</span>
+                            <span class="tag">Emotion AI</span>
+                            <span class="tag">Deep Learning</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- 3D Product Configurator -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-gallery">
+                            <img src="static/image1.png" alt="3D Product Configurator" class="gallery-img active">
+                            <img src="static/image2.png" alt="3D Product Configurator" class="gallery-img">
+                            <img src="static/image3.png" alt="3D Product Configurator" class="gallery-img">
+                        </div>
+                        <div class="gallery-controls">
+                            <button class="gallery-btn prev" onclick="changeImage(-1)">❮</button>
+                            <button class="gallery-btn next" onclick="changeImage(1)">❯</button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>3D Product Configurator</h3>
+                            <span class="project-status completed">Completed</span>
+                        </div>
+                        <p>
+                            Interactive 3D product customization platform allowing real-time personalization 
+                            with color changes, texture mapping, and design elements. Features immersive 
+                            user experience with WebGL rendering.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature"><i class="fas fa-palette"></i> Real-time Customization</span>
+                            <span class="feature"><i class="fas fa-cube"></i> 3D Rendering</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Three.js</span>
+                            <span class="tag">WebGL</span>
+                            <span class="tag">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="pages/3d_website.html" class="project-link" target="_blank">
+                                <i class="fas fa-images"></i> View Gallery
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blast and Boom Game -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-gamepad project-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Blast and Boom</h3>
+                            <span class="project-status completed">Published</span>
+                        </div>
+                        <p>
+                            High-energy 2D action shooter game optimized for mobile platforms. Features 
+                            dynamic gameplay mechanics, responsive controls, and engaging visual effects 
+                            designed for an immersive gaming experience.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature"><i class="fas fa-mobile-alt"></i> Mobile Optimized</span>
+                            <span class="feature"><i class="fas fa-crosshairs"></i> Action Shooter</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">Unity</span>
+                            <span class="tag">C#</span>
+                            <span class="tag">Mobile Gaming</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://cheekzzzz.itch.io/blast-boom" class="project-link" target="_blank">
+                                <i class="fas fa-play"></i> Play Now
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Website -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <div class="project-icon-wrapper">
+                            <i class="fas fa-globe project-icon"></i>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <div class="project-header">
+                            <h3>Professional Portfolio</h3>
+                            <span class="project-status completed">Live</span>
+                        </div>
+                        <p>
+                            Modern, responsive portfolio website showcasing projects, skills, and achievements. 
+                            Built with clean design principles, smooth animations, and optimized performance 
+                            across all devices.
+                        </p>
+                        <div class="project-features">
+                            <span class="feature"><i class="fas fa-mobile-alt"></i> Fully Responsive</span>
+                            <span class="feature"><i class="fas fa-bolt"></i> Performance Optimized</span>
+                        </div>
+                        <div class="project-tags">
+                            <span class="tag">HTML5</span>
+                            <span class="tag">CSS3</span>
+                            <span class="tag">JavaScript</span>
+                            <span class="tag">Responsive Design</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info-section">
+                    <h3>Let's Connect & Collaborate</h3>
+                    <p>
+                        I'm always excited to discuss new opportunities, innovative AI/ML projects, 
+                        or collaborate on cutting-edge technology solutions. Whether you're looking 
+                        for an AI engineer, have a project idea, or just want to connect, I'd love to hear from you!
+                    </p>
+                    
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Email</h4>
+                                <p>narayanan.contact25@gmail.com</p>
+                                <span class="method-alt">clnarayanan12345@gmail.com</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fab fa-whatsapp"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>WhatsApp</h4>
+                                <p>+91 9867629595</p>
+                                <span class="method-note">Available for quick chats</span>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-globe"></i>
+                            </div>
+                            <div class="method-info">
+                                <h4>Languages</h4>
+                                <p>Tamil, Telugu, Hindi, English</p>
+                                <span class="method-note">+ Marathi (Beginner)</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <a href="https://github.com/LightPeacock" target="_blank" class="social-link github">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub</span>
+                        </a>
+                        <a href="https://www.linkedin.com/in/cl-narayanan-a38598249/" target="_blank" class="social-link linkedin">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn</span>
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="contact-form-section">
+                    <form id="contact-form" class="contact-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="from_name">Your Name *</label>
+                                <input type="text" id="from_name" name="from_name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="from_email">Your Email *</label>
+                                <input type="email" id="from_email" name="from_email" required>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a topic</option>
+                                <option value="job_opportunity">Job Opportunity</option>
+                                <option value="collaboration">Project Collaboration</option>
+                                <option value="consultation">AI/ML Consultation</option>
+                                <option value="networking">Professional Networking</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" rows="6" required 
+                                placeholder="Tell me about your project, opportunity, or how I can help..."></textarea>
+                            <div class="char-counter">
+                                <span id="char-count">0</span>/500 characters
+                            </div>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-full" id="submit-btn">
+                            <span class="btn-text">
+                                <i class="fas fa-paper-plane"></i> Send Message
+                            </span>
+                            <span class="btn-loading" style="display: none;">
+                                <i class="fas fa-spinner fa-spin"></i> Sending...
+                            </span>
+                        </button>
+                    </form>
+                    
+                    <div id="form-status" class="form-status"></div>
+                    
+                    <div class="quick-contact">
+                        <p>Prefer direct contact?</p>
+                        <div class="quick-contact-buttons">
+                            <a href="https://wa.me/919867629595?text=Hello%20C.L.%20Narayanan,%20I%20found%20your%20portfolio%20and%20would%20like%20to%20connect!" 
+                               target="_blank" class="btn btn-whatsapp">
+                                <i class="fab fa-whatsapp"></i> 
+                                <span>WhatsApp</span>
+                            </a>
+                            <a href="mailto:narayanan.contact25@gmail.com?subject=Portfolio%20Contact&body=Hi%20C.L.%20Narayanan,%0D%0A%0D%0AI%20found%20your%20portfolio%20and%20would%20like%20to%20connect.%0D%0A%0D%0ABest%20regards," 
+                               class="btn btn-email">
+                                <i class="fas fa-envelope"></i>
+                                <span>Email</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>C.L. Narayanan</h3>
+                    <p>AI/ML Engineer & Full-Stack Developer</p>
+                    <p class="footer-education">B.Tech AI & Data Science • KL University</p>
+                </div>
+                <div class="footer-links">
+                    <a href="https://github.com/LightPeacock" target="_blank" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/cl-narayanan-a38598249/" target="_blank" title="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="mailto:narayanan.contact25@gmail.com" title="Email">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="https://wa.me/919867629595" target="_blank" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 C.L. Narayanan. All rights reserved.</p>
+                <p class="footer-note">Built with passion for AI and innovation</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="back-to-top" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="scripts/script.js"></script>
+</body>
+</html>
